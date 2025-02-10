@@ -1,6 +1,8 @@
-﻿namespace DemoApp.UseCases.Transfer.CommandHandler
+﻿using MediatR;
+
+namespace DemoApp.UseCases.Transfer.CommandHandler
 {
-    public class AccountCommandHandler 
+    public class AccountCommandHandler : IRequestHandler<RequestForStatementCommand, AppResponse>
     {
     }
 }
